@@ -39,9 +39,9 @@ function checkButtonHandling() {
 
       // toggle the checked property
       toggleItem(state,index);
-
+      $(event.currentTarget).closest('li span').toggleClass(checkedClass);
       // render list
-      renderList(state);
+      // renderList(state);
     });
 }
 
